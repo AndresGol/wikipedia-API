@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+      <meta charset="UTF-8">
+      <title>Wikipedia viewer</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container" class="container">  
+    <h1>Wikipedia <span>viewer</span></h1>
+
+    <input id="input1" placeholder="Search wikipedia" class="field center"
+    onkeydown = "if (event.keyCode == 13) document.getElementById('search').click()" ></input>
+    <input id="search" type="submit" value="Search" class="center button search" onclick="submit()"></input>
+    
+  </div>
+
+    <script  src="script.js"></script>
+    
+</body>
+
+</html>
