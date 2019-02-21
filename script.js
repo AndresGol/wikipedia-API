@@ -2,17 +2,17 @@ var input1 = document.getElementById('input1');
 var container = document.getElementById('container');
 
 function removeElementsByClassName(className) {
-  var msgs = document.getElementsByClassName(className);
-  while(msgs.length > 0){
-        msgs[0].parentNode.removeChild(msgs[0]);
+var msgs = document.getElementsByClassName(className);
+while(msgs.length > 0){
+    msgs[0].parentNode.removeChild(msgs[0]);
     }
 }
 
 function submit() {  
-  //Removing previous messages
-  removeElementsByClassName("message");
-  
-  //Requesting data from wikipedia
+//Removing previous messages
+removeElementsByClassName("message");
+
+//Requesting data from wikipedia
   fetch( 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&list=search&srsearch=' + input1.value).then( function ( response ) {
     if ( response.ok ) {
         return response.json();
@@ -32,5 +32,5 @@ function submit() {
         container.appendChild(a);
     }
 });
-    input1.value = ""; 
+    //input1.value = ""; 
 }

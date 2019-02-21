@@ -1,3 +1,11 @@
+body {
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: mediumspringgreen;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+}
+
+
 * {
     font-family: 'Dosis', sans-serif;
 }
@@ -9,25 +17,29 @@
     padding: 10px 0px;
     padding-bottom: 25px;
     margin-bottom: 30px;
+    border-radius: 10px;
   }
   
   .message {  
-    background-color: #f2f2f2;
+    background-color: #f1fdf4;
     margin: 20px;
     padding: 20px 40px;
     text-align: left;
-    border-left: 5px solid #ccc;
+    border-left: 5px solid #16b49f;
     cursor: pointer;
     border-radius: 5px;
     word-wrap: break-word;
+    transition: 0.5s;
   }
   
   .message:hover {
-    border-left: 15px solid #16b49f;
+    border-left: 5px solid #ccc;
+    background-color: #a0f7eb;
+    border-right: 5px solid #16b49f;
   }
   
-  @media (min-width: 800px)
-  { .container {
+  @media (min-width: 800px) {
+    .container {
     margin: 30px 10%;
     margin-bottom: 30px;} 
     
@@ -36,8 +48,8 @@
     padding: 20px 50px;}
   }
   
-  @media (min-width: 1200px)
-  { .container {
+  @media (min-width: 1200px){ 
+    .container {
     margin: 0px 15%;
     margin-bottom: 30px;} 
     
@@ -51,13 +63,13 @@
     line-height: 27px;
     padding-left: 10px;
     margin-right: 0px;
-    border: 1px solid #aaa;
+    border: 2px solid #70af9d;
     box-shadow: inset 0 0px 3px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
   }
   
   .field:hover, .field:focus {
-    border: 1px solid #555;
+    border: 1px solid #70af9d;
   }
   
   .button {
@@ -67,7 +79,7 @@
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
-    font-family: arial,sans-serif;
+    font-family: 'Dosis', sans-serif;
     cursor: default;
     font-size: 14px;
     margin: 10px 5px;
@@ -79,9 +91,10 @@
   .button:hover {
     color: #fff;
     border: 1px solid #aaa;
-    box-shadow: 1 0 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1 0 1px rgba(13, 243, 51, 0.5);
     background-color: #16ac93;
   }
+
   
   .search {
     margin-right: 30px;
@@ -113,10 +126,11 @@
     width: 150px;
     height: 150px;
     display: block;
-    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png');
+    background-image: url("wiki_logo.gif");
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px auto;
+    box-shadow: #16ac93;
   }
   
   .by, .by > a {
@@ -126,4 +140,7 @@
     margin-bottom: 25px;
   }
   
+.field {
+  margin-top: 
+}
   
